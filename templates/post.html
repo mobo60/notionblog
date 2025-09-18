@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="post-layout">
+    <div class="post-main card">
+        <div class="post-content">
+            <p style="color: #888;">&gt;&gt; {{ post.category }}</p>
+            <h1>{{ post.title }}</h1>
+            <p class="meta">{{ post.date }} &nbsp;&nbsp; {{ post.author }}</p>
+            {{ post.content_html | safe }}
+        </div>
+    </div>
+    <div class="post-sidebar">
+        {% if post.toc %}
+        <div class="sidebar-box">
+            <h3>目錄</h3>
+            <ul>
+                {% for item in post.toc %}
+                    <li style="margin-left: {{ (item.level - 2) * 1 }}rem;">
+                        <a href="#{{ item.anchor_id }}">{{ item.text | safe }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        {% if related_posts %}
+        <div class="sidebar-box">
+            <h3>看其他{{ post.category }}</h3>
+            <ul>
+                {% for related in related_posts %}
+                    <li><a href="{{ related.filename }}">{{ related.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

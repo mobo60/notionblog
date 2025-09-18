@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="card">
+        <h2>{{ category_title }}</h2>
+        <p>{{ category_description }}</p>
+    </div>
+
+    <div class="card">
+        <div class="post-list">
+            {% for year, posts_in_year in posts_by_year.items() %}
+                <div class="year-group">{{ year }}</div>
+                {% for post in posts_in_year %}
+                    <div class="post-list-item">
+                        <a href="{{ post.filename }}">{{ post.title }}</a>
+                        <span class="date">{{ post.date_display }}</span>
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南觀×難關×喃倌</title>
+    <style>
+        :root {
+            --bg-color: #f8f7f4;
+            --card-bg-color: #ffffff;
+            --text-color: #333333;
+            --subtle-text-color: #888888;
+            --accent-color: #d4b2a7;
+            --border-color: #eeeeee;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        header {
+            background-color: var(--accent-color);
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+        .header-content {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo a {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--card-bg-color);
+            text-decoration: none;
+            /* ✨ 修改處：增加 flex 佈局讓圖片和文字對齊 ✨ */
+            display: flex;
+            align-items: center;
+        }
+        /* ✨ 新增處：設定 Logo 圖片的樣式 ✨ */
+        .logo img {
+            height: 32px; /* 控制 Logo 高度 */
+            margin-right: 12px; /* 讓 Logo 和文字之間有點間距 */
+        }
+        nav a {
+            margin-left: 1.5rem;
+            color: var(--card-bg-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .card {
+            background-color: var(--card-bg-color);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        /* ... (其餘 CSS 保持不變) ... */
+        .post-list .year-group { margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold; }
+        .post-list-item { display: flex; justify-content: space-between; padding: 0.8rem 0; border-bottom: 1px solid var(--border-color); }
+        .post-list-item a { text-decoration: none; color: var(--text-color); }
+        .post-list-item .date { color: var(--subtle-text-color); white-space: nowrap; margin-left: 2rem; }
+        .post-layout { display: flex; gap: 2rem; }
+        .post-main { flex: 3; }
+        .post-sidebar { flex: 1; }
+        .post-content h1, .post-content h2, .post-content h3 { line-height: 1.3; }
+        .post-content .meta { color: var(--subtle-text-color); margin-bottom: 2rem; }
+        .sidebar-box { background-color: var(--card-bg-color); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .sidebar-box h3 { margin-top: 0; border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar-box ul { list-style: none; padding: 0; }
+        .sidebar-box li { margin-bottom: 0.5rem; }
+        footer { text-align: center; padding: 2rem 0; color: var(--subtle-text-color); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://gs-foto.s3.ap-southeast-2.amazonaws.com/upload/icon/favicon-96x96.svg" alt="網站Logo">
+                    <span>南觀×難關×喃倌</span>
+                </a>
+            </div>
+            <nav>
+                <a href="blog.html">Blog</a>
+                <a href="picstory.html">PicStory</a>
+                <a href="https://www.threads.com/@gatestory_lea?hl=zh-tw" target="_blank" rel="noopener noreferrer">Threads</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            
+<div class="post-layout">
+    <div class="post-main card">
+        <div class="post-content">
+            <p style="color: #888;">&gt;&gt; blog</p>
+            <h1>虎父和犬子</h1>
+            <p class="meta">2024-07-21 &nbsp;&nbsp; Lea Cheng</p>
+            <h2 id='toc-1'>老虎生下的孩子</h2><p>學校裡有一個學生，小名小虎，他是個白白淨淨、有禮貌、個子不高、笑起來靦腆可愛的大男孩。</p><p>不對喔！在矯正學校裡，這樣形容一個學生，似乎有些矛盾，學生都是曾犯罪而被判刑的少年犯呀！小虎也是，而且是因未成人殺人而入校服刑。</p><p>老實說，小虎的過去確實風風雨雨，是少年法院列管頭痛的少年，但他在老師們的面前，確實是個常常憨憨的笑著，除了他那身上滿佈的刺青，以及入校時調查的資料讓我們感到驚嚇外，他和一般正值青春洋溢的高中生沒什麼兩樣，就是個可愛的男孩！</p><p>有一次，學校裡發生了一件較多人的騷動事件，發生的起因，就像街頭少年一般，一群人和一群人有誤會，起了口角，大家各說各話吵了起來，但從監視畫面上，可見多位學生，主動的向小虎「說明」大家的看法，試圖要解釋口角的原因，而事後又發現，這些事和小虎沒有太大的關係。猜想：小虎應該是個意見領袖或是同儕中有份量的人物吧！</p><p>全校都是曾經非行、犯罪的少年，在我們這樣的學校裡，偶有口角，甚至擦槍走火的衝突並不好防範，我常觀察小虎，評估他會不會也是團體中，容易惹事生非的少年？幾次的觀察，他一直保持憨憨的笑容，即使學校裡仍零星的會有些同儕的衝突，但似乎和小虎關係不太，甚至，小虎還會勸大家，不要有衝突，穩定才能早日出校，因為小虎的爸爸在成人監獄服刑，常寫信告訴他：好好表現，早點出校。他爸爸聽說是個角頭老大，因案被判20年多年的刑期。</p><h2 id='toc-2'>出生後命運誰決定</h2><p>小虎入校沒有多久，媽媽曾經到校來關心小虎，小虎向老師們說，媽媽因毒品案也服刑多年，最近因假釋出監，才到校來關心他，小虎還開心的表示，媽媽離開監所了，他也要好好表現早日回家。但媽媽自從那次來看小虎，從此又在他的生命中消失，這不知是第幾次了，媽媽又不見了！</p><p>小虎在學校期間，穩定關心他的家人只有阿伯和堂哥。</p><p>有一次懇親會，只見三個穿著黑衣、黑褲、拖鞋的壯漢入校，心中想著「這三位不知是誰的家屬？」，開始懇親之後，才發現這三位黑衣人，就是小虎的阿伯和二個堂哥，小虎的家族是當地的角頭、流氓？！說真的，雖然當了二十多年的非行少年的老師，教過無數家庭背景複雜的孩子，但角頭流氓的家庭，在我的生活中仍有很大的距離，而和老師們每日朝夕相處、俊秀憨厚的小虎，就是這樣家庭長大的孩子。</p><h2 id='toc-3'>懸崖邊的生命，怎麼救</h2><p>小虎出校了，紀錄上寫著：…他的父親現仍在監所執行25年的刑期，母親去年女監假釋到校接見一次後，從此消失在茫茫人海，小虎出校何去何從，令人嘆息....」，小虎成年了，他告訴老師們，他不需要幫忙，他會和阿伯住，出校那天，我見黑衣人在校外等著小虎，那是他最親近的家人！</p><p><b>後記：小虎，再犯罪了！或許，他與我們的生命不再有交集，但曾經相遇的那段日子，留在我們回憶中那個安分守己、乖巧上課學習、協助老師、對未來報著美好想像的大男孩！那身影美好，卻令人惋惜地短暫！</b></p>
+        </div>
+    </div>
+    <div class="post-sidebar">
+        
+        <div class="sidebar-box">
+            <h3>目錄</h3>
+            <ul>
+                
+                    <li style="margin-left: 0rem;">
+                        <a href="#toc-1">老虎生下的孩子</a>
+                    </li>
+                
+                    <li style="margin-left: 0rem;">
+                        <a href="#toc-2">出生後命運誰決定</a>
+                    </li>
+                
+                    <li style="margin-left: 0rem;">
+                        <a href="#toc-3">懸崖邊的生命，怎麼救</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+        
+        <div class="sidebar-box">
+            <h3>看其他blog</h3>
+            <ul>
+                
+                    <li><a href="271d602f090181238509cbad9f529e6f.html">開學啦～相信帶來更多自由</a></li>
+                
+                    <li><a href="271d602f090181e1b513f4d084219037.html">逆風少年要順風飛翔？</a></li>
+                
+                    <li><a href="271d602f090181fda0f3c7ffc0947402.html">少年矯正學校教育實施事項訪視第9次</a></li>
+                
+                    <li><a href="271d602f090181078cb9f05e42f9b8a2.html">矯正學校學生下課後的休閒活動</a></li>
+                
+                    <li><a href="271d602f09018123b4cfdfb1953ba061.html">開學啦～山道猴子的啟示</a></li>
+                
+                    <li><a href="271d602f0901819eaf32fc6213a01046.html">開學啦～自律的人，才能擁有真正的自由</a></li>
+                
+                    <li><a href="271d602f090181bfa76afea83b88931c.html">怪獸吉他手</a></li>
+                
+                    <li><a href="271d602f0901811197a4e04a176523cf.html">開學啦～好想送你們出校</a></li>
+                
+                    <li><a href="271d602f090181d5935cfb11e0b63156.html">我是老師，這是我的日常</a></li>
+                
+                    <li><a href="271d602f0901819bacd9d8a505655851.html">南關、難關、喃關</a></li>
+                
+                    <li><a href="271d602f090181f19c1bd7927d82f12b.html">矯正學校的獨白</a></li>
+                
+                    <li><a href="271d602f0901812f9422c15fe5097eee.html">小陽不賣檳榔</a></li>
+                
+                    <li><a href="271d602f0901814aaf71f2823d18d249.html">阿承的自傳</a></li>
+                
+                    <li><a href="271d602f090181538554d815e08d4dd8.html">我們這樣長大(上)</a></li>
+                
+                    <li><a href="271d602f09018123aa74c2daf8762b49.html">我們這樣長大(下)</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+        </main>
+    </div>
+
+    <footer>
+        本站所有文章未經書面授權，請勿任意利用、引用、轉載。
+    </footer>
+
+</body>
+</html>

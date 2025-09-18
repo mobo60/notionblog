@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南觀×難關×喃倌</title>
+    <style>
+        :root {
+            --bg-color: #f8f7f4;
+            --card-bg-color: #ffffff;
+            --text-color: #333333;
+            --subtle-text-color: #888888;
+            --accent-color: #d4b2a7;
+            --border-color: #eeeeee;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        header {
+            background-color: var(--accent-color);
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+        .header-content {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo a {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--card-bg-color);
+            text-decoration: none;
+            /* ✨ 修改處：增加 flex 佈局讓圖片和文字對齊 ✨ */
+            display: flex;
+            align-items: center;
+        }
+        /* ✨ 新增處：設定 Logo 圖片的樣式 ✨ */
+        .logo img {
+            height: 32px; /* 控制 Logo 高度 */
+            margin-right: 12px; /* 讓 Logo 和文字之間有點間距 */
+        }
+        nav a {
+            margin-left: 1.5rem;
+            color: var(--card-bg-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .card {
+            background-color: var(--card-bg-color);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        /* ... (其餘 CSS 保持不變) ... */
+        .post-list .year-group { margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold; }
+        .post-list-item { display: flex; justify-content: space-between; padding: 0.8rem 0; border-bottom: 1px solid var(--border-color); }
+        .post-list-item a { text-decoration: none; color: var(--text-color); }
+        .post-list-item .date { color: var(--subtle-text-color); white-space: nowrap; margin-left: 2rem; }
+        .post-layout { display: flex; gap: 2rem; }
+        .post-main { flex: 3; }
+        .post-sidebar { flex: 1; }
+        .post-content h1, .post-content h2, .post-content h3 { line-height: 1.3; }
+        .post-content .meta { color: var(--subtle-text-color); margin-bottom: 2rem; }
+        .sidebar-box { background-color: var(--card-bg-color); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .sidebar-box h3 { margin-top: 0; border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        .sidebar-box ul { list-style: none; padding: 0; }
+        .sidebar-box li { margin-bottom: 0.5rem; }
+        footer { text-align: center; padding: 2rem 0; color: var(--subtle-text-color); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://gs-foto.s3.ap-southeast-2.amazonaws.com/upload/icon/favicon-96x96.svg" alt="網站Logo">
+                    <span>南觀×難關×喃倌</span>
+                </a>
+            </div>
+            <nav>
+                <a href="blog.html">Blog</a>
+                <a href="picstory.html">PicStory</a>
+                <a href="https://www.threads.com/@gatestory_lea?hl=zh-tw" target="_blank" rel="noopener noreferrer">Threads</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            
+    <div class="card">
+        <h2>Blog</h2>
+        <p>發現犯罪少年矯正工作的歷史足跡</p>
+    </div>
+
+    <div class="card">
+        <div class="post-list">
+            
+                <div class="year-group">2024</div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f0901810ca627dda7dcf23ae6.html">虎父和犬子</a>
+                        <span class="date">07-21</span>
+                    </div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f090181238509cbad9f529e6f.html">開學啦～相信帶來更多自由</a>
+                        <span class="date">02-17</span>
+                    </div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f090181e1b513f4d084219037.html">逆風少年要順風飛翔？</a>
+                        <span class="date">01-20</span>
+                    </div>
+                
+            
+                <div class="year-group">2023</div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f090181fda0f3c7ffc0947402.html">少年矯正學校教育實施事項訪視第9次</a>
+                        <span class="date">12-21</span>
+                    </div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f090181078cb9f05e42f9b8a2.html">矯正學校學生下課後的休閒活動</a>
+                        <span class="date">11-18</span>
+                    </div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f09018123b4cfdfb1953ba061.html">開學啦～山道猴子的啟示</a>
+                        <span class="date">08-31</span>
+                    </div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f0901819eaf32fc6213a01046.html">開學啦～自律的人，才能擁有真正的自由</a>
+                        <span class="date">02-14</span>
+                    </div>
+                
+            
+                <div class="year-group">2022</div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f090181bfa76afea83b88931c.html">怪獸吉他手</a>
+                        <span class="date">09-28</span>
+                    </div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f0901811197a4e04a176523cf.html">開學啦～好想送你們出校</a>
+                        <span class="date">09-01</span>
+                    </div>
+                
+            
+                <div class="year-group">2019</div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f090181d5935cfb11e0b63156.html">我是老師，這是我的日常</a>
+                        <span class="date">08-27</span>
+                    </div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f0901819bacd9d8a505655851.html">南關、難關、喃關</a>
+                        <span class="date">08-01</span>
+                    </div>
+                
+            
+                <div class="year-group">2017</div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f090181f19c1bd7927d82f12b.html">矯正學校的獨白</a>
+                        <span class="date">10-05</span>
+                    </div>
+                
+            
+                <div class="year-group">2016</div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f0901812f9422c15fe5097eee.html">小陽不賣檳榔</a>
+                        <span class="date">02-01</span>
+                    </div>
+                
+            
+                <div class="year-group">2011</div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f0901814aaf71f2823d18d249.html">阿承的自傳</a>
+                        <span class="date">09-02</span>
+                    </div>
+                
+            
+                <div class="year-group">2002</div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f090181538554d815e08d4dd8.html">我們這樣長大(上)</a>
+                        <span class="date">06-30</span>
+                    </div>
+                
+                    <div class="post-list-item">
+                        <a href="271d602f09018123aa74c2daf8762b49.html">我們這樣長大(下)</a>
+                        <span class="date">06-30</span>
+                    </div>
+                
+            
+        </div>
+    </div>
+
+        </main>
+    </div>
+
+    <footer>
+        本站所有文章未經書面授權，請勿任意利用、引用、轉載。
+    </footer>
+
+</body>
+</html>
